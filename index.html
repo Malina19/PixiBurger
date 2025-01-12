@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixiBurger</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/hamburgerstyle.css">
+    <link rel="stylesheet" href="./css/link_animation.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/81ec8a3e4f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+
+
+        <div class="header__shadow"></div>
+
+        <nav class="nav nav-desktop">
+            <div class="top">
+                <p>Świątnicka 43, 32-031 Mogilany</p>
+                <p>Tel: 739-252-524</p>
+            </div>
+            <div class="bottom">
+                <a class="nav__link-dsc link-animation" href="index.html#aboutus">O nas</a>
+                <a class="nav__link-dsc" href="index.html#menu">Menu</a>
+                <img src="./img/Pixi logo.png" alt="">
+                <a class="nav__link-dsc" href="index.html#gallery">Galeria</a>
+                <a class="nav__link-dsc" href="index.html#contact">Kontakt</a>
+            </div>
+
+        </nav>
+
+        <nav class=" nav nav-mobile">
+            <a class="nav__link" href="index.html#aboutus">O nas</a>
+            <a class="nav__link" href="index.html#menu">Menu</a>
+            <a class="nav__link" href="index.html#gallery">Galeria</a>
+            <a class="nav__link" href="index.html#contact">Kontakt</a>
+
+            <div class="nav__contact">
+                <div class="nav__contact-one"><i class="fa-solid fa-house"></i>
+                    <p>Świątnicka 43 32-031 Mogilany</p>
+                </div>
+                <div class="nav__contact-two"> <i class="fa-solid fa-phone"></i>
+                    <p>Tel: 739-252-524</p>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header__logo">
+            <img src="./img/Pixi logo.png" alt="">
+        </div>
+
+
+        <div class="header__text" data-aos="fade-right" data-aos-duration="2000">
+            <h1 class="title">Pixi Burger</h1>
+            <h2 class="subtitle">Najlepszy Burger w twojej okolicy</h2>
+            <a href="index.html#aboutus"><button class="header__button">Dowiedz się więcej</button></a>
+        </div>
+
+    </header>
+
+    <section class="aboutus" id="aboutus">
+        <div class="aboutus__info">
+            <h2>O nas</h2>
+            <div class="underline"></div>
+            <div class="aboutus__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati deserunt at officiis laudantium
+                doloremque iusto consequuntur numquam, cupiditate itaque tempora mollitia error facere, tempore quam
+                iste voluptas autem odio? Ex velit quidem illum illo repellendus eveniet dolores! Fugit sequi enim quas,
+                similique sint at totam consectetur aperiam excepturi quidem magni.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati deserunt at officiis laudantium
+                doloremque iusto consequuntur numquam, cupiditate itaque tempora mollitia error facere, tempore quam
+                iste voluptas autem odio? Ex velit quidem illum illo repellendus eveniet dolores! Fugit sequi enim quas,
+                similique sint at totam consectetur aperiam excepturi quidem magni
+            </div>
+
+        </div>
+        <div class="aboutus__photo"></div>
+    </section>
+
+    <section class="menu wrapper" id="menu">
+        <div class="menu__title">Nasze menu</div>
+        <div class="underline"></div>
+
+        <div class="menu__top">
+
+            <div class="menu__element">
+                <img src="../img/burger-menu.png" alt="">
+                <div class="burger-desc">
+                    <h3>Burger klasyczny</h3>
+                    <p>wołowina 200g, sos autorski, sałata, pomidor, ogórek kiszony, cebula czerwona</p>
+                    <div class="price">
+                        <p>32zł</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu__element">
+                <img src="../img/burger-menu.png" alt="">
+                <div class="burger-desc">
+                    <h3>Burger cheese</h3>
+                    <p>wołowina 200g, sos autorski, ser cheddar, sałata, pomidor, ogórek konserwowy, cebula czerwona</p>
+                    <div class="price">
+                        <p>34zł</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu__bottom">
+
+            <div class="menu__element">
+                <img src="../img/burger-menu.png" alt="">
+                <div class="burger-desc">
+                    <h3>Burger bekon&cheese</h3>
+                    <p>wołowina 200g, sos autorski, boczek, ser cheedar, sałata, pomidor, ogórek konserwowy, cebula
+                        czerwona</p>
+                    <div class="price">
+                        <p>35zł</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu__element">
+                <img src="../img/burger-menu.png" alt="">
+                <div class="burger-desc">
+                    <h3>Burger Pixi</h3>
+                    <p>wołowina 200g, sos autorski, sos BBQ, boczek, ser panierowany 100g, pomidor, ogórek konserwowy,
+                        cebula czerwona, prażona cebulka </p>
+                    <div class="price">
+                        <p>40zł</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="menu__btn">Zobacz całe menu</button>
+
+    </section>
+
+    <section class="gallery" id="gallery">
+
+        <img src="../img/burger galeria 1.jpg" alt="">
+        <img src="../img/burger galeria 2.jpg" alt="">
+        <img src="../img/burger galeria 1.jpg" alt="">
+        <img src="../img/burger galeria 2.jpg" alt="">
+        <img src="../img/burger galeria 3.jpg" alt="">
+        <img src="../img/burger galeria 4.jpg" alt="">
+        <img src="../img/burger galeria 3.jpg" alt="">
+        <img src="../img/burger galeria 4.jpg" alt="">
+
+
+    </section>
+
+    <section class="steps" id="steps">
+        <h2 class="steps__title">Tylko 3 kroki dzielą Cię od zjedzenia najlepszego burgera</h2>
+        <div class="steps__elements wrapper">
+            <div class="steps__group">
+                <img src="../img/icons/call-svgrepo-com.svg" alt="">
+                <p>1. Zadzwoń</p>
+            </div>
+            <div class="steps__group">
+                <img src="../img/icons/order-svgrepo-com.svg" alt="">
+                <p>2. Zamów</p>
+            </div>
+            <div class="steps__group">
+                <img src="../img/icons/burger-svgrepo-com (1).svg" alt="">
+                <p>3. Odbierz</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2 class="reviews__title">Co sądzą o nas klienci?</h2>
+        <div class="underline"></div>
+        <div class="reviews__table">
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-a4c29f0f-dac0-4230-959f-de454301a424" data-elfsight-app-lazy></div>
+        </div>
+
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="contact__title">Kontakt</h2>
+        <div class="underline"></div>
+        <div class="contact__content">
+
+            <iframe class="contact__map" data-aos="fade-right" data-aos-duration="2000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3189.873324060207!2d19.891532477100746!3d49.93731067149868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471669d861621241%3A0xcd035c10f68c11bf!2sPixi%20Burger!5e1!3m2!1spl!2spl!4v1734977857658!5m2!1spl!2spl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            <form action="mail.php" method="post" class="contact__form" data-aos="fade-left" data-aos-duration="2000">
+                <h3>Masz pytania? Zadzwoń lub skorzystaj z formularza</h3>
+                <div class="contact__inputs">
+                    <div class="contact__form-box">
+                        <label for="name">Imię i nazwisko:</label><br>
+                        <input type="text" id="name" name="name" required>
+                    </div><br>
+                    <div class="contact__form-box">
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div><br>
+                </div>
+                <div class="contact__form-box">
+                    <label for="msg">Wiadomość:</label><br>
+                    <textarea name="msg" id="msg" required></textarea>
+                </div>
+
+                <button class="contact__btn">Wyślij</button>
+            </form>
+
+        </div>
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="footer__elements">
+            <a href="index.html"><img src="./img/Pixi logo.png" alt=""></a>
+            <div class="footer__elements-links">
+                <a href="index.html#aboutus">O nas</a>
+                <a href="index.html#menu">Menu</a>
+                <a href="index.html#gallery">Galeria</a>
+                <a href="index.html#contact">Kontakt</a>
+            </div>
+            <div class="footer__elements-address">
+                <div class="addres_one">
+                    <img src="./img/icons/location-dot-solid.svg" alt="">
+                    <p>Świątnicka 20, 32-031 Mogilany</p>
+                </div>
+                <div class="addres_two">
+                    <img src="./img/icons/phone-solid.svg" alt="">
+                    <p>739-252-524</p>
+                </div>
+                <div class="addres_three">
+                    <img src="./img/icons/facebook-brands-solid.svg" alt="">
+                    <p>PixiBurger</p>
+                </div>
+            </div>
+            <div class="footer__elements-openHours">
+                <p class="open_hours_title">Godziny otwarcia</p>
+                <div class="table">
+                    <ul class="days">
+                        <li>Poniedziałek</li>
+                        <li>Wtorek - Piątek</li>
+                        <li>Sobota - Niedziela</li>
+                    </ul>
+                    <ul class="hours">
+                        <li>Zamknięte</li>
+                        <li>13:30 - 21:00</li>
+                        <li>13:30 - 22:00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <header class="header">
+        <div class="topnav">
+            <p>Świątnicka 43 32-031 Mogilany</p>
+            <p>739-252-524</p>
+        </div>
+
+
+        <nav class="nav-desktop">
+            <a class="nav-desktop__link" href="index.html#aboutus">O nas</a>
+            <a class="nav-desktop__link" href="index.html#menu">Menu</a>
+            <div class="nav-desktop__logo"><a class="nav__link" href="#" aria-label="Strona główna"><img
+                        src="./img/Pixi logo.png" alt="Pixi Burger Logo"></a>
+            </div>
+            <a class="nav-desktop__link" href="index.html#gallery">Galeria</a>
+            <a class="nav-desktop__link" href="index.html#contact">Kontakt</a>
+
+        </nav>
+
+        <div class="header__text">
+            <h1 class="title">Pixi Burger</h1>
+            <h2 class="subtitle">Najlepszy Burger w twojej okolicy</h2>
+            <a href="index.html#aboutus"><button class="header__button">Dowiedz się więcej</button></a>
+        </div>
+
+
+
+
+
+
+        <div class="header__shadow"></div>
+    </header>
+
+    <section class="aboutus" id="aboutus">
+        <div class="aboutus__info">
+            <h2>O nas</h2>
+            <div class="underline"></div>
+            <div class="aboutus__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati deserunt at officiis laudantium
+                doloremque iusto consequuntur numquam, cupiditate itaque tempora mollitia error facere, tempore quam
+                iste voluptas autem odio? Ex velit quidem illum illo repellendus eveniet dolores! Fugit sequi enim quas,
+                similique sint at totam consectetur aperiam excepturi quidem magni.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati deserunt at officiis laudantium
+                doloremque iusto consequuntur numquam, cupiditate itaque tempora mollitia error facere, tempore quam
+                iste voluptas autem odio? Ex velit quidem illum illo repellendus eveniet dolores! Fugit sequi enim quas,
+                similique sint at totam consectetur aperiam excepturi quidem magni.
+            </div>
+        </div>
+        <div class="aboutus__photo"><img src="../img/burger aboutus.jpg" alt="burger"></div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="menu__title">Nasze menu</div>
+        <div class="underline"></div>
+
+        <div class="menu__top">
+
+            <div class="menu__element">
+                <img src="../img/burger-menu.png" alt="">
+                <div class="burger-desc">
+                    <h3>Burger klasyczny</h3>
+                    <p>wołowina 200g, sos autorski, sałata, pomidor, ogórek kiszony, cebula czerwona</p>
+                    <div class="price">
+                        <p>32zł</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu__element">
+                <img src="../img/burger-menu.png" alt="">
+                <div class="burger-desc">
+                    <h3>Burger cheese</h3>
+                    <p>wołowina 200g, sos autorski, ser cheddar, sałata, pomidor, ogórek konserwowy, cebula czerwona</p>
+                    <div class="price">
+                        <p>34zł</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu__bottom">
+
+            <div class="menu__element">
+                <img src="../img/burger-menu.png" alt="">
+                <div class="burger-desc">
+                    <h3>Burger bekon&cheese</h3>
+                    <p>wołowina 200g, sos autorski, boczek, ser cheedar, sałata, pomidor, ogórek konserwowy, cebula
+                        czerwona</p>
+                    <div class="price">
+                        <p>35zł</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu__element">
+                <img src="../img/burger-menu.png" alt="">
+                <div class="burger-desc">
+                    <h3>Burger Pixi</h3>
+                    <p>wołowina 200g, sos autorski, sos BBQ, boczek, ser panierowany 100g, pomidor, ogórek konserwowy,
+                        cebula czerwona, prażona cebulka </p>
+                    <div class="price">
+                        <p>40zł</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="menu__btn">Zobacz całe menu</button>
+
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="gallery__top">
+            <img src="../img/burger galeria 1.jpg" alt="">
+            <img src="../img/burger galeria 2.jpg" alt="">
+            <img src="../img/burger galeria 1.jpg" alt="">
+            <img src="../img/burger galeria 2.jpg" alt="">
+            <img src="../img/burger galeria 3.jpg" alt="">
+            <img src="../img/burger galeria 4.jpg" alt="">
+            <img src="../img/burger galeria 3.jpg" alt="">
+            <img src="../img/burger galeria 4.jpg" alt="">
+        </div>
+
+    </section>
+
+    <section class="steps">
+        <h2 class="steps__title">Tylko 3 kroki dzielą Cię od zjedzenia najlepszego burgera</h2>
+        <div class="steps__elements wrapper">
+            <div class="steps__group">
+                <img src="../img/icons/call-svgrepo-com.svg" alt="">
+                <p>1. Zadzwoń</p>
+            </div>
+            <div class="steps__group">
+                <img src="../img/icons/order-svgrepo-com.svg" alt="">
+                <p>2. Zamów</p>
+            </div>
+            <div class="steps__group">
+                <img src="../img/icons/burger-svgrepo-com (1).svg" alt="">
+                <p>3. Odbierz</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2 class="reviews__title">Co sądzą o nas klienci?</h2>
+        <div class="underline"></div>
+        <div class="reviews__table">
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-a4c29f0f-dac0-4230-959f-de454301a424" data-elfsight-app-lazy></div>
+        </div>
+
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="contact__title">Kontakt</h2>
+        <div class="underline"></div>
+        <div class="contact__content">
+
+            <iframe class="contact__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3189.873324060207!2d19.891532477100746!3d49.93731067149868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471669d861621241%3A0xcd035c10f68c11bf!2sPixi%20Burger!5e1!3m2!1spl!2spl!4v1734977857658!5m2!1spl!2spl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            <form action="mail.php" method="post" class="contact__form">
+                <h3>Masz pytania? Zadzwoń lub skorzystaj z formularza</h3>
+                <div class="contact__inputs">
+                    <div class="contact__form-box">
+                        <label for="name">Imię i nazwisko:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="contact__form-box">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="contact__form-box">
+                    <label for="msg">Wiadomość:</label>
+                    <textarea name="msg" id="msg" required></textarea>
+                </div>
+
+                <button>Wyślij</button>
+            </form>
+
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer__elements">
+            <a href="index.html"><img src="./img/Pixi logo.png" alt=""></a>
+            <div class="footer__elements-links">
+                <a href="index.html#aboutus">O nas</a>
+                <a href="index.html#menu">Menu</a>
+                <a href="index.html#gallery">Galeria</a>
+                <a href="index.html#contact">Kontakt</a>
+            </div>
+            <div class="footer__elements-address">
+                <div class="addres_one">
+                    <img src="./img/icons/location-dot-solid.svg" alt="">
+                    <p>Świątnicka 20, 32-031 Mogilany</p>
+                </div>
+                <div class="addres_two">
+                    <img src="./img/icons/phone-solid.svg" alt="">
+                    <p>739-252-524</p>
+                </div>
+                <div class="addres_three">
+                    <img src="./img/icons/facebook-brands-solid.svg" alt="">
+                    <p>PixiBurger</p>
+                </div>
+            </div>
+            <div class="footer__elements-openHours">
+                <p class="open_hours_title">Godziny otwarcia</p>
+                <div class="table">
+                    <ul class="days">
+                        <li>Poniedziałek</li>
+                        <li>Wtorek - Piątek</li>
+                        <li>Sobota - Niedziela</li>
+                    </ul>
+                    <ul class="hours">
+                        <li>Zamknięte</li>
+                        <li>13:30 - 21:00</li>
+                        <li>13:30 - 22:00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

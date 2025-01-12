@@ -1,0 +1,220 @@
+@charset "UTF-8";
+@media (min-width: 992px) {
+  .nav-desktop {
+    display: block;
+  }
+  .nav-desktop .top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .nav-desktop .top p {
+    font-size: 1.2rem;
+    margin: 0.8em;
+  }
+  .nav-desktop .bottom {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+  }
+  .nav-desktop .bottom img {
+    box-sizing: border-box;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 30vh;
+    width: 40vh;
+  }
+  .nav-desktop .bottom a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  .header .hamburger {
+    display: none;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__text {
+    top: 25em;
+    left: 10em;
+  }
+  .header__text .title {
+    font-size: 10rem;
+  }
+  .header__text .subtitle {
+    font-size: 6rem;
+  }
+  .header__button {
+    margin: 1.5em;
+    margin-left: 0;
+    padding: 0.6em;
+    font-size: 2.2rem;
+  }
+  .aboutus {
+    flex-direction: row;
+    width: 100%;
+  }
+  .aboutus__info {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutus__info h2 {
+    font-size: 5rem;
+  }
+  .aboutus__text {
+    padding: 4em;
+    height: 80%;
+    font-size: 2rem;
+    align-self: center;
+  }
+  .aboutus__photo {
+    width: 50%;
+    height: 100%;
+  }
+  .menu__title {
+    font-size: 5rem;
+  }
+  .menu__top {
+    display: flex;
+    flex-direction: row;
+    gap: 6em;
+  }
+  .menu__bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 6em;
+    margin-bottom: 4em;
+  }
+  .menu__element {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu__element .burger-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .menu__element .price {
+    align-self: flex-end;
+  }
+  .menu__btn {
+    font-size: 2.2rem;
+    margin-bottom: 1.5em;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Tworzymy 2 kolumny */
+  }
+  .gallery img {
+    min-width: 25vh;
+    /* Obrazy wypełnią dostępne miejsce w swoich komórkach */
+    min-height: 25vh;
+    /* Zachowanie proporcji zdjęć */
+  }
+  .contact {
+    height: 100vh;
+  }
+  .contact__title {
+    font-size: 5rem;
+    margin-bottom: 2em;
+  }
+  .contact__content {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact__map {
+    height: 100%;
+  }
+  .contact__form {
+    height: 100%;
+  }
+  .contact__form h3 {
+    font-size: 3.5rem;
+  }
+  .contact__form input {
+    width: 50%;
+  }
+  .contact__form textarea {
+    font-size: 16px;
+  }
+  .contact__btn {
+    margin-top: 3em;
+    font-size: 2rem;
+  }
+  .footer__elements {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1em;
+    width: 70%;
+  }
+  .footer__elements img {
+    width: 25vh;
+    height: 25vh;
+  }
+  .footer__elements-links, .footer__elements-openHours {
+    display: flex;
+  }
+  .footer__elements-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .footer__elements-links a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  .footer__elements-address .addres_one,
+  .footer__elements-address .addres_two,
+  .footer__elements-address .addres_three {
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+  }
+  .footer__elements-address .addres_one img,
+  .footer__elements-address .addres_two img,
+  .footer__elements-address .addres_three img {
+    height: 3vh;
+    width: auto;
+    left: 0;
+  }
+  .footer__elements-address .addres_one p,
+  .footer__elements-address .addres_two p,
+  .footer__elements-address .addres_three p {
+    margin-bottom: 1em;
+  }
+  .footer__elements-openHours {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__elements-openHours .open_hours_title {
+    font-weight: bold;
+    align-self: center;
+    margin-bottom: 1em;
+  }
+  .footer__elements-openHours .table {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+  .footer__elements-openHours .table li {
+    list-style-type: none;
+    font-size: 1.6rem;
+    padding: 0.5em;
+  }
+}/*# sourceMappingURL=large.css.map */

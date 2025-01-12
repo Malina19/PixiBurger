@@ -1,0 +1,27 @@
+.link_animation,
+.link_animation::after,
+.link_animation::before {
+  transition: 0.3s;
+}
+
+.link-animation::before,
+.link-animation::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  border-bottom: 2px solid #fff;
+}
+
+.link-animation::before {
+  right: 50%;
+}
+
+.link-animation::after {
+  left: 50%;
+}
+
+.link-animation:hover::before,
+.link-animation:hover::after {
+  width: 30%;
+}/*# sourceMappingURL=link_animation.css.map */

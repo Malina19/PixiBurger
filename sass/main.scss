@@ -1,0 +1,484 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Teko', serif;
+	src: url('https://www.fontsaddict.com/fontface/truetypewriter-polyglott.ttf');
+	font-size: 1.6rem;
+	color: #fff;
+	background-color: #000;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1400px;
+	width: 100%;
+}
+
+.hamburger {
+	position: absolute;
+	top: 3em;
+	left: 1em;
+	transform: translateY(-50%);
+	z-index: 101;
+
+	&-inner,
+	&-inner::before,
+	&-inner::after {
+		background-color: #ffffff;
+		z-index: 500;
+	}
+}
+
+// NAWIGACJA MOBILNA
+
+.nav {
+	&-desktop {
+		display: none;
+	}
+	&-mobile {
+		position: absolute;
+		top: 0;
+
+		height: 60%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		// padding-left: 2em;
+		gap: 2em;
+
+		background-color: #000000;
+		// z-index: 100;
+		transform: translateX(-102%);
+		transition: transform 0.3s;
+		z-index: 100;
+		&--active {
+			transform: translateX(0);
+		}
+	}
+
+	&__link {
+		padding-left: 2em;
+		padding-bottom: 0.5em;
+		width: 70%;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 2rem;
+		color: #fff;
+		border-bottom: 0.5px groove #bd1e31;
+		border-left: 5px groove #bd1e31;
+	}
+
+	&__contact {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+
+		align-content: start;
+		gap: 1em;
+		bottom: 0;
+
+		padding-bottom: 3em;
+		justify-content: flex-end;
+		align-content: flex-end;
+		align-items: flex-end;
+		color: #ffffff;
+
+		p {
+			font-size: 1.2rem;
+			padding: 0.3em;
+		}
+
+		&-one,
+		&-two {
+			display: flex;
+			flex-direction: row;
+			i {
+				padding: 0.2em;
+			}
+		}
+	}
+}
+
+// HEADER
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+
+	background-image: url('../img/burgerBg.jpg');
+	background-attachment: scroll;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+	&__button {
+		margin: 1em;
+		margin-left: 0;
+		padding: 0.5em;
+		background-color: #bd1e31;
+		font-family: 'Teko', serif;
+		border: none;
+		border-radius: 8px;
+		font-size: 1.8rem;
+		cursor: pointer;
+		transition: all 0.3s;
+
+		&:hover {
+			scale: 1.1;
+		}
+	}
+	&__text {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		flex-wrap: wrap;
+		top: 30em;
+		margin: 2em;
+
+		h1 {
+			font-size: 6rem;
+			z-index: 2;
+			padding-bottom: 0.3em;
+		}
+		h2 {
+			font-size: 2.5rem;
+			z-index: 2;
+		}
+	}
+
+	&__logo {
+		position: absolute;
+		top: 8em;
+		flex: 1;
+	}
+
+	&__shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.7);
+		z-index: -1;
+	}
+}
+
+.aboutus {
+	position: relative;
+	height: 100vh;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+
+	&__info {
+		height: 50vh;
+		display: flex;
+		flex-direction: column;
+
+		align-items: center;
+
+		h2 {
+			padding-top: 1em;
+			font-size: 4rem;
+			color: #bd1e31;
+		}
+	}
+
+	&__text {
+		padding: 1.5em;
+		align-items: center;
+		font-size: 1.4rem;
+	}
+
+	&__photo {
+		height: 50vh;
+		max-width: 100%;
+		background-image: url('../img/burger\ aboutus.jpg');
+		background-size: cover;
+
+		background-position: center;
+	}
+}
+
+.menu {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+
+	&__title {
+		padding-top: 1em;
+		font-size: 4rem;
+		color: #bd1e31;
+	}
+
+	&__top,
+	&__bottom {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		gap: 2em;
+		padding: 3em;
+		max-width: 80%;
+		img {
+			height: 20vh;
+			max-width: 80%;
+			align-self: center;
+		}
+	}
+
+	.burger-desc {
+		width: auto;
+	}
+
+	&__btn {
+		margin: 1em;
+		margin-left: 0;
+		padding: 0.5em;
+		background-color: #bd1e31;
+		font-family: 'Teko', serif;
+		border: none;
+		border-radius: 8px;
+		font-size: 1.8rem;
+		cursor: pointer;
+		transition: all 0.3s;
+
+		&:hover {
+			scale: 1.1;
+		}
+	}
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* Tworzymy 2 kolumny */
+	gap: 10px; /* Odstęp między obrazkami */
+	img {
+		width: 100%; /* Obrazy wypełnią dostępne miejsce w swoich komórkach */
+		height: 20vh; /* Zachowanie proporcji zdjęć */
+	}
+}
+
+.steps {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: linear-gradient(180deg, #000000, #000000, #bd1e31);
+
+	&__title {
+		padding: 1em;
+		font-size: 3rem;
+		color: #bd1e31;
+	}
+
+	&__group {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 2em;
+		img {
+			height: 10vh;
+			padding: 1em;
+		}
+		p {
+			font-size: 2rem;
+			font-weight: bold;
+		}
+	}
+}
+
+.reviews {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(180deg, #bd1e31, #bd1e31, #000000, #000000);
+	&__title {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		font-size: 4rem;
+		color: #fff;
+	}
+	&__table {
+		max-width: 80%;
+	}
+	h2 {
+		padding: 1em;
+		font-size: 3rem;
+	}
+}
+
+.contact {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2em;
+	margin-bottom: 5em;
+	padding: 1em;
+	height: 100vh;
+	width: 100%;
+
+	&__title {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		font-size: 4rem;
+		color: #bd1e31;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__map {
+		width: 100%;
+		padding: 1em;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid #fff;
+		border-radius: 8px;
+		height: auto;
+		width: 100%;
+
+		label {
+			margin: 1em;
+			padding-bottom: 0.5em;
+		}
+
+		input {
+			margin-left: 1em;
+			margin-top: 0.5em;
+			padding: 0 2em;
+			height: 2em;
+			background: none;
+			color: #fff;
+			border: 1px solid #fff;
+			border-radius: 25px;
+			font-size: 12px;
+		}
+
+		textarea {
+			width: 80%;
+			min-height: 10vh;
+			margin-left: 1em;
+			margin-top: 0.5em;
+			padding: 0 2em;
+			height: 2em;
+			background: none;
+			color: #fff;
+			border: 1px solid #fff;
+			border-radius: 25px;
+			font-size: 12px;
+			resize: vertical;
+		}
+	}
+
+	h3 {
+		padding: 1em;
+		color: #bd1e31;
+	}
+
+	&__btn {
+		align-self: center;
+		margin: 1em;
+		padding: 0.5em;
+		width: 80%;
+		background-color: #bd1e31;
+		border: 1px solid #000;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: all 0.3s;
+
+		&:hover {
+			scale: 1.1;
+		}
+	}
+}
+
+.footer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #bd1e31;
+	height: auto;
+	width: 100%;
+
+	&__elements {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 40vh;
+			height: 30vh;
+		}
+		&-links,
+		&-openHours {
+			display: none;
+		}
+		&-address {
+			margin: 1em;
+			padding: 0.5em;
+
+			.addres_one,
+			.addres_two,
+			.addres_three {
+				margin: 0.5em;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 1em;
+
+				img {
+					height: 5vh;
+				}
+				p {
+					margin-bottom: 1.2em;
+				}
+			}
+		}
+	}
+}
+
+@import './medium';
+@import './large';
+@import './link_animation.scss';
