@@ -217,6 +217,13 @@ body {
   max-width: 80%;
   align-self: center;
 }
+.menu__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50vw;
+}
 .menu .burger-desc {
   width: auto;
 }
@@ -306,8 +313,7 @@ body {
   align-items: center;
   margin-top: 2em;
   margin-bottom: 5em;
-  padding: 1em;
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
 .contact__title {
@@ -512,7 +518,7 @@ body {
     justify-content: flex-end;
   }
   .nav-desktop .top p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin: 0.8em;
   }
   .nav-desktop .bottom {
@@ -716,24 +722,30 @@ body {
     padding: 0.5em;
   }
 }
-.three::before,
-.three::after {
+.link_animation,
+.link_animation::after,
+.link_animation::before {
+  transition: 0.3s;
+}
+
+.link-animation::before,
+.link-animation::after {
   content: "";
   position: absolute;
   width: 0;
   bottom: 0;
-  border-bottom: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid #fff;
 }
 
-.three::before {
+.link-animation::before {
   right: 50%;
 }
 
-.three::after {
+.link-animation::after {
   left: 50%;
 }
 
-.three:hover::before,
-.three:hover::after {
-  width: 50%;
+.link-animation:hover::before,
+.link-animation:hover::after {
+  width: 30%;
 }/*# sourceMappingURL=main.css.map */
